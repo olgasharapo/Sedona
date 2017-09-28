@@ -38,68 +38,70 @@
   </section>
   <form class="form page-form" action="#">
     <fieldset class="form-group">
-      <div class="form-group__title">Представьтесь:</div>
-      <label class="field-text__item">
+      <legend class="form-group__title">Представьтесь:</legend>
+      <label class="field-text">
         <span class="field-text__label">ИМЯ*:</span>
         <input class="field-text__input" type="text" name="name" placeholder="Петр">
       </label>
-      <label class="field-text__item">
+      <label class="field-text">
         <span class="field-text__label">ФАМИЛИЯ*:</span>
         <input class="field-text__input" type="text" name="surname" placeholder="Иванов">
       </label>
-      <label class="field-text__item">
+      <label class="field-text">
         <span class="field-text__label">Отчество:</span>
         <input class="field-text__input" type="text" name="patronymic" placeholder="Александрович">
       </label>
     </fieldset>
     <fieldset class="form-group">
-      <div class="form-group__title">Контактная информация:</div>
-      <label class="field-text__item">
+      <legend class="form-group__title">Контактная информация:</legend>
+      <label class="field-text">
         <span class="field-text__label">Контактный телефон*:</span>
         <input class="field-text__input field-text__input--tel" type="tel" name="phone">
       </label>
-      <label class="field-text__item">
+      <label class="field-text">
         <span class="field-text__label">Электронная почта*:</span>
         <input class="field-text__input field-text__input--email" type="email" name="email">
       </label>
     </fieldset>
     <fieldset class="form-group">
-      <div class="form-group__title">Ваше общее впечатление:</div>
-      <label class="field-radio__item">
+      <legend class="form-group__title">Ваше общее впечатление:</legend>
+      <label class="field-radio">
         <input class="field-radio__input" type="radio" name="impression" value="positive">
         <span class="field-radio__label">Скорее положительное</span>
       </label>
-      <label class="field-radio__item">
+      <label class="field-radio">
         <input class="field-radio__input" type="radio" name="impression" value="negative">
         <span class="field-radio__label">Скорее отрицательное</span>
       </label>
-      <label class="field-radio__item">
+      <label class="field-radio">
         <input class="field-radio__input" type="radio" name="impression" value="difficult">
         <span class="field-radio__label">Затрудняюсь ответить</span>
       </label>
     </fieldset>
     <fieldset class="form-group">
-      <div class="form-group__title">Посещенные достопримечательности:</div>
-      <label class="field-checkbox__item">
+      <legend class="form-group__title">Посещенные достопримечательности:</legend>
+      <label class="field-checkbox">
         <input class="field-checkbox__input" type="checkbox" value="bridge" checked>
         <span class="field-checkbox__label">Мост Дьявола</span>
       </label>
-      <label class="field-checkbox__item">
+      <label class="field-checkbox">
         <input class="field-checkbox__input" type="checkbox" value="slide-park" checked>
         <span class="field-checkbox__label">Слайд-парк</span>
       </label>
-      <label class="field-checkbox__item">
+      <label class="field-checkbox">
         <input class="field-checkbox__input" type="checkbox" value="mountain">
         <span class="field-checkbox__label">Гора-Колокол</span>
       </label>
-      <label class="field-checkbox__item">
+      <label class="field-checkbox">
         <input class="field-checkbox__input" type="checkbox" value="red-cliffs">
         <span class="field-checkbox__label">Красные скалы</span>
       </label>
     </fieldset>
     <fieldset class="form-group">
-      <div class="form-group__title">Опишите свои эмоции:</div>
-      <textarea class="field-textarea" name="delights">Опишите подробно все свои восторги</textarea>
+      <legend class="form-group__title">Опишите свои эмоции:</legend>
+      <label class="field-textarea">
+        <textarea class="field-textarea__input" name="delights">Опишите подробно все свои восторги</textarea>
+      </label>
     </fieldset>
     <button class="field-action btn" type="submit" name="send">Отправить отзыв</button>
   </form>
