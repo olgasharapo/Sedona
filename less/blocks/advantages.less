@@ -1,0 +1,42 @@
+.advantages__list {
+  width: 320px;
+}
+
+.advantages__item {
+  position: relative;
+  padding: 40px 30px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  text-align: center;
+
+    &--secondary {
+      background-color: #eeeeee;
+      color: #333333;
+      padding: 30px 30px;
+      
+      .advantages__title {
+        color: #000000;
+      }
+    }
+
+    &--secondary:not(:last-of-type)::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 280px;
+      height: 1px;
+      background-color: #d6d6d6;
+    }
+}
+
+.advantages__title {
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.advantages__number {
+  display: block;
+  margin-bottom: 20px;
+}
