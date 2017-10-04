@@ -9,26 +9,26 @@
   background-color: @color-secondary;
   text-align: center;
 
-    &--secondary {
-      background-color: #eeeeee;
-      color: @text-color;
-      padding: 30px 30px;
+  &--secondary {
+    background-color: #eeeeee;
+    color: @text-color;
+    padding: 30px 30px;
 
-      .advantages__title {
-        color: @text-color--title;
-      }
+    .advantages__title {
+      color: @text-color--title;
     }
+  }
 
-    &--secondary:not(:last-of-type)::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 280px;
-      height: 1px;
-      background-color: #d6d6d6;
-    }
+  &--secondary:not(:last-of-type)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 1px;
+    background-color: #d6d6d6;
+  }
 }
 
 .advantages__title {
