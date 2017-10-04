@@ -9,5 +9,5 @@ node_modules/
 Thumbs.db
 img/
 fonts/
-css/*.css
 package-lock.json
+css/*.css
