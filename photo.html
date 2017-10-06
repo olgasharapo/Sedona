@@ -2,109 +2,114 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Sedona</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="main-header">
-    <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
-    <div class="logo">
-      <img class="logo__img" src="#" alt="Седона">
-    </div>
-    <nav class="main-nav">
-      <button class="main-nav__toggler" type="button">Навигация</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Форма отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Html Academy</a>
-          </li>
-        </ul>
+  <div class="page-wrapper">
+    <header class="main-header">
+      <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
+      <div class="logo">
+        <img class="logo__img" src="#" alt="Седона">
       </div>
-    </nav>
-  </header>
-  <section class="page-description">
-    <div class="container">
-      <h2 class="page-description__title">Фото и видео</h2>
-      <p class="page-description__text">Не можете решиться на путешествие из-за курса?
-        Фотографии помогут вам забыть о политике и экономике.
-      </p>
-    </div>
-  </section>
-  <section class="gallery">
-    <article class="photo">
-      <div class="photo__inner">
-        <img class="photo__img" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы">
-        <p class="photo__label">Неродные просторы</p>
-        <footer class="photo__footer">
-          <p class="photo__footer-author">Автор фото: Борис</p>
-          <button class="photo__footer-like-btn" type="button">like</button>
-          <span class="photo__footer-like-num">1350</span>
-        </footer>
+      <nav class="main-nav">
+        <button class="main-nav__toggler" type="button">Навигация</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Html Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main">
+      <section class="page-description">
+        <div class="container">
+          <h2 class="page-description__title">Фото и видео</h2>
+          <p class="page-description__text">Не можете решиться на путешествие из-за курса?
+            Фотографии помогут вам забыть о политике и экономике.
+          </p>
+        </div>
+      </section>
+      <section class="gallery">
+        <article class="photo">
+          <div class="photo--wrapper">
+            <img class="photo__img" src="img/photo-1-mobile@1x.jpg" alt="Неродные просторы">
+            <p class="photo__label">Неродные просторы</p>
+            <footer class="photo__footer">
+              <p class="photo__footer-author">Автор фото: Борис</p>
+              <button class="photo__footer-like-btn" type="button">like</button>
+              <span class="photo__footer-like-num">1350</span>
+            </footer>
+          </div>
+        </article>
+        <article class="photo">
+          <div class="photo--wrapper">
+            <img class="photo__img" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность">
+            <p class="photo__label">Местная растительность</p>
+            <footer class="photo__footer">
+              <p class="photo__footer-author">Автор фото:Сергей</p>
+              <button class="photo__footer-like-btn" type="button">like</button>
+              <span class="photo__footer-like-num">143</span>
+            </footer>
+          </div>
+        </article>
+        <article class="photo">
+          <div class="photo--wrapper">
+            <img class="photo__img" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север">
+            <p class="photo__label">Дорога на север</p>
+            <footer class="photo__footer">
+              <p class="photo__footer-author">Автор фото: Петр</p>
+              <button class="photo__footer-like-btn" type="button">like</button>
+              <span class="photo__footer-like-num">96</span>
+            </footer>
+          </div>
+        </article>
+        <article class="photo">
+          <div class="photo--wrapper">
+            <img class="photo__img" src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола">
+            <p class="photo__label">Мост дьявола</p>
+            <footer class="photo__footer">
+              <p class="photo__footer-author">Автор фото: Антон</p>
+              <button class="photo__footer-like-btn" type="button">like</button>
+              <span class="photo__footer-like-num">254</span>
+            </footer>
+          </div>
+        </article>
+      </section>
+      <div class="promo">
+        <div class="promo--wrapper container">
+          <h3 class="promo__title">Всё еще сомневаетесь?</h3>
+          <p class="promo__text">Cмотрите видеопрезентацию и скорее за
+            билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <video class="promo__video" src="#" controls preload="metadata" poster="img/video-mobile@1x.jpg"></video>
       </div>
-    </article>
-    <article class="photo">
-      <div class="photo__inner">
-        <img class="photo__img" src="img/photo-2-mobile@1x.jpg" alt="Местная растительность">
-        <p class="photo__label">Местная растительность</p>
-        <footer class="photo__footer">
-          <p class="photo__footer-author">Автор фото:Сергей</p>
-          <button class="photo__footer-like-btn" type="button">like</button>
-          <span class="photo__footer-like-num">143</span>
-        </footer>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <a class="main-footer__hashtag">#visitsedona</a>
+        <div class="main-footer__social">
+          <a class="social-btn social-btn--tw" href="#">твиттер</a>
+          <a class="social-btn social-btn--fb" href="#">фейсбук</a>
+          <a class="social-btn social-btn--ytub" href="#">ютуб</a>
+        </div>
+        <div class="main-footer__copyright">
+          <a class="main-footer__copyright-link" href="#">Разработано</a>
+        </div>
       </div>
-    </article>
-    <article class="photo">
-      <div class="photo__inner">
-        <img class="photo__img" src="img/photo-3-mobile@1x.jpg" alt="Дорога на север">
-        <p class="photo__label">Дорога на север</p>
-        <footer class="photo__footer">
-          <p class="photo__footer-author">Автор фото: Петр</p>
-          <button class="photo__footer-like-btn" type="button">like</button>
-          <span class="photo__footer-like-num">96</span>
-        </footer>
-      </div>
-    </article>
-    <article class="photo">
-      <div class="photo__inner">
-        <img class="photo__img" src="img/photo-4-mobile@1x.jpg" alt="Мост дьявола">
-        <p class="photo__label">Мост дьявола</p>
-        <footer class="photo__footer">
-          <p class="photo__footer-author">Автор фото: Антон</p>
-          <button class="photo__footer-like-btn" type="button">like</button>
-          <span class="photo__footer-like-num">254</span>
-        </footer>
-      </div>
-    </article>
-  </section>
-  <div class="promo">
-    <div class="promo__inner">
-      <h3 class="promo__title">Всё еще сомневаетесь?</h3>
-      <p class="promo__text">Cмотрите видеопрезентацию и скорее за
-        билетами, пока они не подорожали в очередной раз!</p>
-    </div>
-    <video class="promo__video" src="#" controls preload="metadata" poster="img/video-mobile@1x.jpg"></video>
+    </footer>
   </div>
-  <footer class="main-footer">
-    <div class="main-footer__inner">
-      <a class="main-footer__hashtag">#visitsedona</a>
-      <div class="main-footer__social">
-        <a class="social-btn social-btn--tw" href="#">твиттер</a>
-        <a class="social-btn social-btn--fb" href="#">фейсбук</a>
-        <a class="social-btn social-btn--ytub" href="#">ютуб</a>
-      </div>
-      <div class="main-footer__copyright">
-        <a class="main-footer__copyright-link" href="#">Разработано</a>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>
