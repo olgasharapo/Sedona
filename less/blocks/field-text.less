@@ -1,19 +1,19 @@
 .field-text {
   margin-bottom: 15px;
-}
 
-.field-text__label {
-  display: block;
-  margin: 0 20px 15px 15px;
-}
+  &__label {
+    display: block;
+    margin: 0 20px 15px 15px;
+  }
 
-.field-text--name {
-  display: flex;
+  &--name {
+    display: flex;
 
-  .field-text__label {
-    align-self: center;
-    margin: 0;
-    margin-right: 20px;
+    &__label {
+      align-self: center;
+      margin: 0;
+      margin-right: 20px;
+    }
   }
 }
 
@@ -33,7 +33,8 @@
     background-color: #e5e5e5;
   }
 
-  &:active, &:focus {
+  &:active,
+  &:focus {
     background-color: @color-main;
     outline: 4px solid #e6e6e6;
   }
