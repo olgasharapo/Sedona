@@ -15,31 +15,30 @@
       margin-right: 20px;
     }
   }
-}
 
-.field-text__input {
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  border: 0;
-  outline: 0;
-  font-size: @font-size--h2;
-  line-height: 26px;
-  font-weight: 700;
-  color: @text-color--title;
-  background-color: #f2f2f2;
+  &__input {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 0;
+    outline: 0;
+    font-size: @font-size--h2;
+    line-height: 26px;
+    font-weight: 700;
+    color: @text-color--title;
+    background-color: #f2f2f2;
 
-  &:hover {
-    background-color: #e5e5e5;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:active,
+    &:focus {
+      background-color: @color-main;
+      outline: 4px solid #e6e6e6;
+    }
   }
-
-  &:active,
-  &:focus {
-    background-color: @color-main;
-    outline: 4px solid #e6e6e6;
-  }
 }
-
 ::-webkit-input-placeholder {
   color: @text-color--title;
 }
