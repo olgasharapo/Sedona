@@ -1,0 +1,18 @@
+.main-header {
+  display: flex;
+  flex-direction: column;
+
+  &__logo {
+    width: 102px;
+    height: 83px;
+    margin: 0 auto;
+    order: 2;
+
+    @media (min-width: @tablet-width) {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

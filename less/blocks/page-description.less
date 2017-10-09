@@ -2,12 +2,28 @@
   padding-top: 40px;
   padding-bottom: 20px;
 
+  @media (min-width: @tablet-width) {
+    padding: 50px 0;
+  }
+
   &__wrapper {
     padding: 0 32px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 120px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 320px;
+    }
   }
 
   &__title {
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size--large;
+    }
   }
 
   &__text {

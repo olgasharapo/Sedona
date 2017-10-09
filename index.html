@@ -10,8 +10,8 @@
   <div class="page-wrapper">
     <header class="main-header">
       <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
-      <div class="logo">
-        <img class="logo__img" src="#" alt="Седона">
+      <div class="main-header__logo">
+        <img class="main-header__logo-img" src="#" alt="Седона" width="102" height="83">
       </div>
       <nav class="main-nav">
         <button class="main-nav__toggler" type="button">Навигация</button>
@@ -43,9 +43,11 @@
       <section class="advantages">
         <ul class="advantages__list">
           <li class="advantages__item">
-            <h3 class="advantages__title">Настоящий городок</h3>
-            <span class="advantages__number">— №1 —</span>
-            <p class="advatages__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+            <div class="advantages__wrapper">
+              <h3 class="advantages__title">Настоящий городок</h3>
+              <span class="advantages__number">— №1 —</span>
+              <p class="advatages__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img class="advantages__img" src="#" alt="">
           </li>
           <ul class="features">
@@ -63,25 +65,33 @@
             </li>
           </ul>
           <li class="advantages__item">
-            <h3 class="advantages__title">Там есть мост дьявола</h3>
-            <span class="advantages__number">— №2 —</span>
-            <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="advantages__wrapper">
+              <h3 class="advantages__title">Там есть мост дьявола</h3>
+              <span class="advantages__number">— №2 —</span>
+              <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <img class="advantages__img" src="#" alt="">
           </li>
           <li class="advantages__item advantages__item--secondary">
-            <h3 class="advantages__title">Небольшая площадь</h3>
-            <span class="advantages__number">— №3 —</span>
-            <p class="advantages__text">Все интересные места находятся очень близко</p>
+            <div class="advantages__wrapper">
+              <h3 class="advantages__title">Небольшая площадь</h3>
+              <span class="advantages__number">— №3 —</span>
+              <p class="advantages__text">Все интересные места находятся очень близко</p>
+            </div>
           </li>
           <li class="advantages__item advantages__item--secondary">
-            <h3 class="advantages__title">Красивая дорога</h3>
-            <span class="advantages__number">— №4 —</span>
-            <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем НЕ СКУЧНО!</p>
+            <div class="advantages__wrapper">
+              <h3 class="advantages__title">Красивая дорога</h3>
+              <span class="advantages__number">— №4 —</span>
+              <p class="advantages__text">Ехать в Седону из Лас-Вегаса совсем НЕ СКУЧНО!</p>
+            </div>
           </li>
           <li class="advantages__item advantages__item--secondary">
-            <h3 class="advantages__title">Мало туристов</h3>
-            <span class="advantages__number">— №5 —</span>
-            <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+            <div class="advantages__wrapper">
+              <h3 class="advantages__title">Мало туристов</h3>
+              <span class="advantages__number">— №5 —</span>
+              <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -97,16 +107,14 @@
       </div>
     </main>
     <footer class="main-footer">
-      <div class=container>
-        <a class="main-footer__hashtag">#visitsedona</a>
-        <div class="main-footer__social">
-          <a class="social-btn social-btn--tw" href="#">твиттер</a>
-          <a class="social-btn social-btn--fb" href="#">фейсбук</a>
-          <a class="social-btn social-btn--ytub" href="#">ютуб</a>
-        </div>
-        <div class="main-footer__copyright">
-          <a class="main-footer__copyright-link" href="#">Разработано</a>
-        </div>
+      <a class="main-footer__hashtag">#visitsedona</a>
+      <div class="main-footer__social">
+        <a class="social-btn social-btn--tw" href="#">твиттер</a>
+        <a class="social-btn social-btn--fb" href="#">фейсбук</a>
+        <a class="social-btn social-btn--ytub" href="#">ютуб</a>
+      </div>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="#">Разработано</a>
       </div>
     </footer>
   </div>
