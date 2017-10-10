@@ -1,4 +1,14 @@
 .field-action {
+  min-width: 280px;
   margin-left: 20px;
-  margin-bottom: 30px;
+  order: 6;
+
+  @media (min-width: @tablet-width) {
+    min-width: 325px;
+    margin-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 480px;
+  }
 }

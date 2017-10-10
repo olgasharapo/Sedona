@@ -1,6 +1,12 @@
 .field-radio {
   display: flex;
 
+  &:last-child {
+    .field-radio__label {
+      margin-bottom: 0;
+    }
+  }
+
   &__input {
     display: none;
   }
@@ -15,6 +21,10 @@
     font-weight: 700;
     color: @text-color--title;
     text-transform: none;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 25px;
+    }
   }
 
   &__input + &__label::before {

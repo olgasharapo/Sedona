@@ -1,0 +1,28 @@
+.form {
+  width: 100%;
+}
+
+.page-form {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    padding-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 120px;
+    padding-bottom: 60px;
+  }
+
+  &__sure {
+    display: none;
+    order: 7;
+    margin-left: auto;
+    align-self: center;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}

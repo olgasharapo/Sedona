@@ -43,7 +43,7 @@
         </div>
       </section>
       <form class="form page-form" action="#">
-        <fieldset class="form-group">
+        <fieldset class="form-group form-group--name">
           <div class="form-group__wrapper">
             <legend class="form-group__title">Представьтесь:</legend>
             <label class="field-text field-text--name">
@@ -61,19 +61,19 @@
           </div>
         </fieldset>
         <fieldset class="form-group">
-          <div class="form-group__wrapper">
+          <div class="form-group__wrapper form-group__wrapper--contacts">
             <legend class="form-group__title">Контактная информация:</legend>
-            <label class="field-text">
+            <label class="field-text field-text--contacts">
               <span class="field-text__label">Контактный телефон*:</span>
               <input class="field-text__input field-text__input--tel" type="tel" name="phone" placeholder="Введите телефон">
             </label>
-            <label class="field-text">
+            <label class="field-text field-text--contacts">
               <span class="field-text__label">Электронная почта*:</span>
               <input class="field-text__input field-text__input--email" type="email" name="email" placeholder="Введите e-mail">
             </label>
           </div>
         </fieldset>
-        <fieldset class="form-group">
+        <fieldset class="form-group form-group--impression">
           <div class="form-group__wrapper">
             <legend class="form-group__title">Ваше общее впечатление:</legend>
             <label class="field-radio">
@@ -91,7 +91,7 @@
           </div>
         </fieldset>
         <fieldset class="form-group">
-          <div class="form-group__wrapper">
+          <div class="form-group__wrapper form-group__wrapper--attraction">
             <legend class="form-group__title">Посещенные достопримечательности:</legend>
             <label class="field-checkbox">
               <input class="field-checkbox__input" type="checkbox" value="bridge" checked>
@@ -120,19 +120,18 @@
           </div>
         </fieldset>
         <button class="field-action btn" type="submit" name="send">Отправить отзыв</button>
+        <p class="page-form__sure">* — обязательные поля</p>
       </form>
     </main>
     <footer class="main-footer">
-      <div class="container">
-        <a class="main-footer__hashtag">#visitsedona</a>
-        <div class="main-footer__social">
-          <a class="social-btn social-btn--tw" href="#">твиттер</a>
-          <a class="social-btn social-btn--fb" href="#">фейсбук</a>
-          <a class="social-btn social-btn--ytub" href="#">ютуб</a>
-        </div>
-        <div class="main-footer__copyright">
-          <a class="main-footer__copyright-link" href="#">Разработано</a>
-        </div>
+      <a class="main-footer__hashtag">#visitsedona</a>
+      <div class="main-footer__social">
+        <a class="social-btn social-btn--tw" href="#">твиттер</a>
+        <a class="social-btn social-btn--fb" href="#">фейсбук</a>
+        <a class="social-btn social-btn--ytub" href="#">ютуб</a>
+      </div>
+      <div class="main-footer__copyright">
+        <a class="main-footer__copyright-link" href="#">Разработано</a>
       </div>
     </footer>
   </div>

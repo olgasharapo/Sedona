@@ -4,11 +4,44 @@
   border: none;
   border-top: 1px solid #e5e5e5;
 
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    padding: 0;
+    order: 3;
+    border-top: none;
+    margin-bottom: 60px;
+    }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     width: 280px;
     margin: 0 auto;
+
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      margin: 0;
+
+      &--attraction {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      &--contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      &--attraction {
+        justify-content: flex-start;
+      }
+    }
   }
 
   &__title {
@@ -18,5 +51,83 @@
     color: @text-color--title;
     text-align: center;
     margin-bottom: 25px;
+
+    @media (min-width: @tablet-width) {
+      position: relative;
+      padding: 0 125px;
+      margin-bottom: 60px;
+      font-size: @font-size--large;
+
+      &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: 125px;
+        top: 50%;
+        transform: translateY(-50%);
+        border: 1px solid #e5e5e5;
+      }
+
+      &::after {
+        left: 0;
+      }
+
+      &::before {
+        right: 0;
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+      padding: 0 280px;
+
+      &::after,
+      &::before {
+        width: 280px;
+      }
+    }
+  }
+
+  &--impression {
+    @media (min-width: @tablet-width) {
+      width: 50%;
+      order: 1;
+
+      .form-group__wrapper {
+        border-right: 1px solid #e5e5e5;
+      }
+
+      .form-group__title {
+        text-align: left;
+        padding: 0;
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      width: 50%;
+      padding-left: 50px;
+      order: 2;
+
+      .form-group__title {
+        text-align: left;
+        padding: 0;
+
+        &::after,
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 80px;
+    }
   }
 }
