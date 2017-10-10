@@ -1,13 +1,46 @@
 .promo {
   padding: 40px 0;
 
+  @media (min-width: @tablet-width) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 0;
+  }
+
   &__wrapper {
     padding: 0 40px;
     margin-bottom: 40px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0 110px;
+      margin-bottom: 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 380px;
+    }
   }
 
   &__title {
     line-height: 26px;
     margin-bottom: 30px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
+  }
+
+  &__video {
+    @media (min-width: @tablet-width) {
+      width: 100%;
+      height: 499px;
+      padding: 0 60px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding: 0 200px;
+    }
   }
 }
