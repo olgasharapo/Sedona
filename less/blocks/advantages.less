@@ -1,41 +1,42 @@
-.advantages__list {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
-.advantages__item {
-  @media (min-width: @tablet-width) {
-    display: flex;
-  }
-}
-
-.advantages__wrapper {
-  padding: 40px 30px;
-  color: @text-color--secondary;
-  background-color: @color-secondary;
-  text-align: center;
-
-  @media (min-width: @tablet-width) {
-    width: 256px;
-    height: 256px;
-    padding: 40px 50px;
+.advantages {
+  &__list {
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 400px;
-    padding: 50px 65px;
+  &__item {
+    @media (min-width: @tablet-width) {
+      display: flex;
+    }
   }
-}
 
-.advantages__item--secondary {
-  position: relative;
+  &__content {
+    padding: 40px 30px;
+    color: @text-color--secondary;
+    background-color: @color-secondary;
+    text-align: center;
 
-  .advantages__wrapper {
-    color: @text-color;
-    background-color: @color-secondary--lighten;
+    @media (min-width: @tablet-width) {
+      width: 256px;
+      min-height: 256px;
+      padding: 40px 50px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 400px;
+      padding: 50px 65px;
+    }
   }
+
+  &__item--secondary {
+    position: relative;
+
+    .advantages__content {
+      color: @text-color;
+      background-color: @color-secondary--lighten;
+    }
 
     &:not(:last-of-type)::after {
       content: "";
@@ -52,37 +53,38 @@
       }
     }
 
-  .advantages__title {
-    color: @text-color--title;
-  }
-}
-
-.advantages__title {
-  margin-bottom: 15px;
-  color: @text-color--secondary;
-
-  @media (min-width: @tablet-width) {
-    font-size: @font-size--large;
-    line-height: 26px;
-  }
-}
-
-.advantages__number {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.advantages__img {
-  display: block;
-  width: 320px;
-  height: 260px;
-
-  @media (min-width: @tablet-width) {
-    width: 512px;
-    height: 256px;
+    .advantages__title {
+      color: @text-color--title;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    width: 800px;
+  &__title {
+    margin-bottom: 15px;
+    color: @text-color--secondary;
+
+    @media (min-width: @tablet-width) {
+      font-size: @font-size--large;
+      line-height: 26px;
+    }
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    display: block;
+    width: 320px;
+    height: 260px;
+
+    @media (min-width: @tablet-width) {
+      width: 512px;
+      height: 256px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 800px;
+    }
   }
 }
