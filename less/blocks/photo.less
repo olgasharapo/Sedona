@@ -15,28 +15,30 @@
 
   &:last-child {
     border-bottom: 1px solid #e5e5e5;
+
+    @media (min-width: @tablet-width) {
+      border-bottom: none;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: @tablet-width) {
+      width: 648px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 100%;
+    }
   }
 
   @media (min-width: @tablet-width) {
     width: 324px;
     border: none;
-
-    &:first-child {
-      width: 648px;
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
     position: relative;
     width: 400px;
-
-    &:first-child {
-      width: 100%;
-    }
   }
 
   &__wrapper {

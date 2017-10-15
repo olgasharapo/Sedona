@@ -1,26 +1,22 @@
 .main-nav {
-
   &__list {
     @media (min-width: @tablet-width) {
       display: flex;
-      padding-left: 50px;
-      padding-right: 30px;
-    }
-
-    @media (min-width: @desktop-width) {
-      padding-left: 90px;
-      padding-right: 70px;
+      flex-wrap: wrap;
     }
   }
 
   &__item {
     text-align: center;
 
-    @media (min-width: @tablet-width) {
-      &--photo,
-      &--form {
-        flex-grow: 2;
+    &:nth-child(2) {
+      @media (min-width: @tablet-width) {
+        margin-right: 20%;
       }
+    }
+
+    @media (min-width: @tablet-width) {
+      width: 20%;
     }
   }
 
@@ -54,6 +50,7 @@
         color: lighten(@text-color--title, 70%);
       }
     }
+
 
     @media (min-width: @tablet-width) {
       padding: 15px;
