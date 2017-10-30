@@ -1,4 +1,36 @@
 .main-nav {
+  position: relative;
+  background-color: @color-main;
+
+  &__toggler {
+    position: absolute;
+    bottom: -56px;
+    right: 0;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    border: none;
+    background-color: @color-main;
+    overflow: hidden;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 22px;
+      height: 4px;
+      background-color: @color-secondary;
+      box-shadow: 0 8px 0 0 @color-secondary, 0 16px 0 0 @color-secondary;
+    }
+  }
+
   &__list {
     @media (min-width: @tablet-width) {
       display: flex;

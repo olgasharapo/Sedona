@@ -8,17 +8,23 @@
 </head>
 <body>
   <div class="page-wrapper">
-    <header class="main-header">
+    <header class="main-header main-header--inner-page">
       <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
       <div class="main-header__logo">
-        <img class="main-header__logo-img" src="#" alt="Седона">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
+        </picture>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggler" type="button">Навигация</button>
+        <button class="main-nav__toggler" type="button">
+          <span class="main-nav__toggler-text visually-hidden">Навигация</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--first" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фото и видео</a>
@@ -27,11 +33,12 @@
               <a class="main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html Academy</a>
+              <a class="main-nav__link main-nav__link--last" href="#">Html Academy</a>
             </li>
           </ul>
         </div>
       </nav>
+      <div class="main-header__bar"></div>
     </header>
     <main class="page-main">
       <section class="page-description">

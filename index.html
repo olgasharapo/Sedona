@@ -11,10 +11,16 @@
     <header class="main-header">
       <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
       <div class="main-header__logo">
-        <img class="main-header__logo-img" src="#" alt="Седона" width="102" height="83">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="main-header__logo-img" src="img/logo-sedona-mobile.svg" alt="Седона" width="102" height="83">
+        </picture>
       </div>
       <nav class="main-nav">
-        <button class="main-nav__toggler" type="button">Навигация</button>
+        <button class="main-nav__toggler" type="button">
+          <span class="main-nav__toggler-text visually-hidden">Навигация</span>
+        </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -32,6 +38,7 @@
           </ul>
         </div>
       </nav>
+      <div class="main-header__bar"></div>
     </header>
     <main class="page-main">
       <section class="page-description">
@@ -49,7 +56,11 @@
               <p class="advatages__text">Седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="advantages__photo">
-              <img class="advantages__img" src="#" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg, img/photo-city@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.jpg, img/photo-city-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="">
+              </picture>
             </div>
           </li>
           <ul class="features">
@@ -73,7 +84,11 @@
               <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
             <div class="advantsges__photo">
-              <img class="advantages__img" src="#" alt="">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg, img/photo-bridge@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="advantages__img" src="img/photo-bridge-mobile@1x.jpg" scrset="img/photo-bridge-mobile@2x.jpg 2x" alt="">
+              </picture>
             </div>
           </li>
           <li class="advantages__item advantages__item--secondary">
@@ -107,7 +122,11 @@
         </div>
       </div>
       <div class="map">
-        <img class="map__img" src="img/bg-map-mobile@1x.jpg" alt="map" width="320" height="350">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+          <img class="map__img" src="img/bg-map-mobile@1x.jpg" alt="map">
+        </picture>
       </div>
     </main>
     <footer class="main-footer">
