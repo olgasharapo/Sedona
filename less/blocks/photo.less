@@ -103,8 +103,18 @@
   }
 
   &__footer-like-btn {
+    font-size: 0;
     border: none;
     outline: none;
+    background-color: transparent;
+  }
+
+  &__footer-like-icon {
+    fill: #b2b2b2;
+
+    @media (min-width: @desktop-width) {
+      fill: @color-main;
+    }
   }
 
   &__footer-like-num {

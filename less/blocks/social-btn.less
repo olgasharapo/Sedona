@@ -1,16 +1,25 @@
 .social-btn {
-  display: block;
+  display: flex;
   margin-right: 6px;
   font-size: 0;
   width: 46px;
   height: 48px;
   background-color: @color-secondary;
 
-    &:hover {
-      background-color: @color-secondary--darken;
-    }
+  &:hover {
+    background-color: @color-secondary--darken;
+  }
 
-    &:active {
-      background-color: @color-secondary--darkest;
-    }
+  &:active {
+    background-color: @color-secondary--darkest;
+  }
+
+  &:active &__icon {
+    opacity: 0.3;
+  }
+
+  &__icon {
+    margin: auto;
+    fill: @color-main;
+  }
 }

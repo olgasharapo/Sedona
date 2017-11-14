@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <div class="page-wrapper">
     <header class="main-header main-header--inner-page">
       <h1 class="main-header__title visually-hidden">Седона-небольшой городок в Аризоне.</h1>
@@ -36,6 +39,11 @@
               <a class="main-nav__link main-nav__link--last" href="#">Html Academy</a>
             </li>
           </ul>
+          <button class="main-nav__close-btn" type="button" name="button">
+            <svg class="main-nav__link-icon" width="22" height="22">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+          </button>
         </div>
       </nav>
       <div class="main-header__bar"></div>
@@ -55,8 +63,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
-                alt="Неродные просторы">
+              <img class="photo__img" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Неродные просторы">
             </picture>
             <footer class="photo__footer">
               <div class="photo__footer-text">
@@ -64,7 +71,12 @@
                 <p class="photo__footer-author">Автор фото: Борис</p>
               </div>
               <div class="photo__footer-like">
-                <button class="photo__footer-like-btn" type="button">like</button>
+                <button class="photo__footer-like-btn" type="button">
+                  <svg class="photo__footer-like-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  like
+                </button>
                 <span class="photo__footer-like-num">1350</span>
               </div>
             </footer>
@@ -75,16 +87,20 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x 2x">
-              <img class="photo__img" src="img/photo-2-mobile@1x.jpg"
-                srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
+              <img class="photo__img" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Местная растительность">
             </picture>
             <footer class="photo__footer">
               <div class="photo__footer-text">
                 <p class="photo__footer-label">Местная растительность</p>
-                <p class="photo__footer-author">Автор фото:Сергей</p>
+                <p class="photo__footer-author">Автор фото: Сергей</p>
               </div>
               <div class="photo__footer-like">
-                <button class="photo__footer-like-btn" type="button">like</button>
+                <button class="photo__footer-like-btn" type="button">
+                  <svg class="photo__footer-like-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  like
+                </button>
                 <span class="photo__footer-like-num">143</span>
               </div>
             </footer>
@@ -95,8 +111,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x 2x">
-              <img class="photo__img" src="img/photo-3-mobile@1x.jpg"
-                srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
+              <img class="photo__img" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога на север">
             </picture>
             <footer class="photo__footer">
               <div class="photo__footer-text">
@@ -104,7 +119,12 @@
                 <p class="photo__footer-author">Автор фото: Петр</p>
               </div>
               <div class="photo__footer-like">
-                <button class="photo__footer-like-btn" type="button">like</button>
+                <button class="photo__footer-like-btn" type="button">
+                  <svg class="photo__footer-like-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  like
+                </button>
                 <span class="photo__footer-like-num">96</span>
               </div>
             </footer>
@@ -115,8 +135,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/photo-4-desktop@1x.jpg, img/photo-4-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-4-tablet@1x.jpg, img/photo-4-tablet@2x.jpg 2x">
-              <img class="photo__img" src="img/photo-4-mobile@1x.jpg"
-                srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
+              <img class="photo__img" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост дьявола">
             </picture>
             <footer class="photo__footer">
               <div class="photo__footer-text">
@@ -124,7 +143,12 @@
                 <p class="photo__footer-author">Автор фото: Антон</p>
               </div>
               <div class="photo__footer-like">
-                <button class="photo__footer-like-btn" type="button">like</button>
+                <button class="photo__footer-like-btn" type="button">
+                  <svg class="photo__footer-like-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  like
+                </button>
                 <span class="photo__footer-like-num">254</span>
               </div>
             </footer>
@@ -137,22 +161,55 @@
           <p class="promo__text">Cмотрите видеопрезентацию и скорее за
             билетами, пока они не подорожали в очередной раз!</p>
         </div>
+        <div class="promo__video">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-            <img class="promo__video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
+            <img class="promo__video-img" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x">
           </picture>
+          <div class="promo__video-controls">
+            <svg class="promo__video-controls-icon promo__video-controls-icon-replay" width="16" height="20">
+              <use xlink:href="#icon-video-replay"></use>
+            </svg>
+            <svg class="promo__video-controls-icon promo__video-controls-icon-subtitles " width="32" height="20">
+              <use xlink:href="#icon-video-subtitles"></use>
+            </svg>
+            <svg class="promo__video-controls-icon promo__video-controls-icon-fullscreen" width="20" height="20">
+              <use xlink:href="#icon-video-fullscreen"></use>
+            </svg>
+          </div>
+          <div class="promo__video-controls-bar"></div>
+        </div>
       </div>
     </main>
     <footer class="main-footer">
       <a class="main-footer__hashtag">#visitsedona</a>
       <div class="main-footer__social">
-        <a class="social-btn social-btn--tw" href="#">твиттер</a>
-        <a class="social-btn social-btn--fb" href="#">фейсбук</a>
-        <a class="social-btn social-btn--ytub" href="#">ютуб</a>
+        <a class="social-btn social-btn--tw" href="#">
+          <svg class="social-btn__icon" width="18" height="14">
+            <use xlink:href="#icon-twitter"></use>
+          </svg>
+          твиттер
+        </a>
+        <a class="social-btn social-btn--fb" href="#">
+          <svg class="social-btn__icon" width="9" height="18">
+            <use xlink:href="#icon-facebook"></use>
+          </svg>
+          фейсбук
+        </a>
+        <a class="social-btn social-btn--ytub" href="#">
+          <svg class="social-btn__icon" width="20" height="14">
+            <use xlink:href="#icon-youtube"></use>
+          </svg>
+          ютуб
+        </a>
       </div>
       <div class="main-footer__copyright">
-        <a class="main-footer__copyright-link" href="#">Разработано</a>
+        <a class="main-footer__copyright-link" href="#">Разработано
+          <svg class="main-footer__copyright-icon" width="27" height="34">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
   </div>

@@ -46,9 +46,12 @@
   }
 
   &__copyright {
+    display: flex;
+    justify-content: center;
+
     @media (min-width: @tablet-width) {
       width: 195px;
-      text-align: right;
+      justify-content: flex-end;
     }
 
     @media (min-width: @desktop-width) {
@@ -58,6 +61,20 @@
   }
 
   &__copyright-link {
+    display: flex;
+    align-items: center;
     color: @text-color--title;
+  }
+
+  &__copyright-icon {
+    margin-left: 10px;
+
+    &:hover {
+      fill: @color-secondary;
+    }
+
+    &:active {
+      fill: #b2b2b2;
+    }
   }
 }

@@ -31,6 +31,14 @@
   }
 
   &__video {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__video-img {
+    display: block;
     width: 100%;
 
     @media (min-width: @tablet-width) {
@@ -40,6 +48,102 @@
 
     @media (min-width: @desktop-width) {
       padding: 0 200px;
+    }
+  }
+
+  &__video-controls {
+    position: absolute;
+    right: 20px;
+    left: 20px;
+    bottom: 65px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      right: 20px;
+      transform: translateY(-50%);
+      height: 3px;
+      background-color: rgba(255, 255, 255, 0.2);
+
+      @media (min-width: @tablet-width) {
+        left: 70px;
+        right: 150px;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 60px;
+      transform: translateY(-50%);
+      width: 9px;
+      height: 9px;
+      background-color: @color-main;
+      border-radius: 50%;
+
+      @media (min-width: @tablet-width) {
+        left: 150px;
+      }
+    }
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      bottom: 0;
+      left: 60px;
+      right: 60px;
+      height: 70px;
+      padding: 25px 30px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 200px;
+      right: 200px;
+    }
+  }
+
+  &__video-controls-icon {
+    position: absolute;
+    top: 65px;
+    fill: #5c6870;
+
+    @media (min-width: @tablet-width) {
+      position: static;
+      fill: @color-main;
+    }
+  }
+
+  &__video-controls-icon-replay {
+    left: 20px;
+  }
+
+  &__video-controls-icon-subtitles {
+    right: 70px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: auto;
+    }
+  }
+
+  &__video-controls-icon-fullscreen {
+    right: 20px;
+
+    @media (min-width: @tablet-width) {
+      margin-left: 30px;
+    }
+  }
+
+  &__video-controls-bar {
+    width: 280px;
+    height: 65px;
+    background-color: @color-secondary--lighten;
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 }

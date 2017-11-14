@@ -83,7 +83,6 @@
       }
     }
 
-
     @media (min-width: @tablet-width) {
       padding: 15px;
       font-size: @font-size;
@@ -95,6 +94,7 @@
     }
 
     &--first {
+      position: relative;
       box-shadow: none;
     }
 
@@ -106,6 +106,29 @@
       @media (min-width: @tablet-width) {
         box-shadow: none;
       }
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &__link-icon {
+    fill: @color-main;
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
   }
 }

@@ -7,7 +7,6 @@
 *.sublime*
 node_modules/
 Thumbs.db
-img/
-fonts/
 package-lock.json
 css/*.css
+build/
